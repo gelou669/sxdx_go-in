@@ -21,23 +21,7 @@ move_uploaded_file($tmp,$filepath.$imgname.".jpg")
   <title>外出登记</title>
   <link rel="stylesheet" href="./css/index.css" />
 </head>
- <!--此为取消微信分享功能-->
-        <script>
-         function onBridgeReady() {
-             WeixinJSBridge.call('hideOptionMenu');
-         }
- 
-         if (typeof WeixinJSBridge == "undefined") {
-             if (document.addEventListener) {
-                 document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
-             } else if (document.attachEvent) {
-                 document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
-                 document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
-             }
-         } else {
-             onBridgeReady();
-         }
-         </script>
+
          
          <script type="text/javascript">
         // 对浏览器的UserAgent进行正则匹配，不含有微信独有标识的则为其他浏览器
@@ -74,24 +58,7 @@ move_uploaded_file($tmp,$filepath.$imgname.".jpg")
       <div class="tips">请尽快向保安人员出示当前页面，倒计时结束后页面将失效</div>
     </div>
 	
-    <!--<transition name="fade">
-      <div
-        class="warning"
-        v-if="showTips && localShowTips"
-        @click="closeMask"
-      >
-        <span class="wp tit">tips:</span>
-        <span class="wp">各位研究生小姐姐：你们好</span>
-        <span class="wp">！！！请低调使用！！！</span>
-        <span class="wp">二维码为百度地址（不信阔以扫一扫~）</span>
-        <span class="wp">所以无法机测，仅能糊弄保安</span>
-        <span class="wp">不出意外这个提示每个浏览器只会出现一次</span>
-        <span class="wp">请在使用前检查一下日期及信息是否正确、有无BUG</span>
-        <span class="wp">由于各浏览器差异，顶部可能会暴露链接，请遮挡</span>
-        <span class="wp">有问题及时反馈哦~</span>
-        <span class="wp ls"> --> <!--点击这个半透明遮罩关闭提示 <-- </span>
-      </div>
-    </transition>-->
+   
   </div>
   <script type="text/javascript" src="./js/vue.js"></script>
   <script type="text/javascript" src="./js/index.js"></script>
