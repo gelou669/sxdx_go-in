@@ -25,23 +25,7 @@
     <script src="js./example.js"></script>-->
     
     
-    <!--此为取消微信分享功能-->
-        <script>
-         function onBridgeReady() {
-             WeixinJSBridge.call('hideOptionMenu');
-         }
- 
-         if (typeof WeixinJSBridge == "undefined") {
-             if (document.addEventListener) {
-                 document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
-             } else if (document.attachEvent) {
-                 document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
-                 document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
-             }
-         } else {
-             onBridgeReady();
-         }
-         </script>
+    
          
          <script type="text/javascript">
         // 对浏览器的UserAgent进行正则匹配，不含有微信独有标识的则为其他浏览器
